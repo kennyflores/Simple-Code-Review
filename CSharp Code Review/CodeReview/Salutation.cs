@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CodeReview
 {
-    class Salutation
+    public class Salutation
     {
         private string _Greeting;
         private string _Farewell;
@@ -16,11 +16,13 @@ namespace CodeReview
             _Greeting = greetingMessage;
             _Farewell = farewellMessage;
         }
+
         public string Greet()
         {
             return _Greeting;
         }
-        public string SayFareWell()
+
+        public string SayFarewell()
         {
             return _Farewell;
         }
